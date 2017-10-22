@@ -10,13 +10,13 @@ Its a simple multi-threaded HTTP Server that only accepts HTTP GET requests and 
 
 
 ### Brief Description:
-Server.Java 
+##### Server.Java 
 1. Server.java is the Server class(containing the main function) which creates the socket and listen on the port 8080.
 2. The server is responsible to accept the TCP request through socket and creates a new thread to process each Http Request.
 3. Server receives the requested resource name, client port number and client IP address.
 4. Server also prints the number of time the resource is requested along with above details from the client.
 
-HttpHandler.java
+##### HttpHandler.java
 1. HttpHandler is responsible to parse the Http GET Request for a requested resource.
 2. If the request resource is found, HttpHandle prepares the http response header with 200 OK status, append the content and send the response.
 3. If resource is not found, HttpHandler sends 404 Not Found.
@@ -36,18 +36,18 @@ items:
   client port client’s port number
   access times the number of times this resource has been requested since the start of the HTTP server
 
-###Sample Input/Output:
-Step 1: Follow the instructions to execute to start the server.
+### Sample Input/Output:
+##### Step 1: Follow the instructions to execute to start the server.
 Output:
 ====================Server Details====================
 Server Machine: 168.192.121.1
 Port number: 8080 
 
-Step 2: On client machine run the wget to get resource. After the input is executed the file gets downloaded as client side.
+##### Step 2: On client machine run the wget to get resource. After the input is executed the file gets downloaded as client side.
 Input:
 wget http:/168.192.121.1:8080/test.htm
 
-Step 3: At Server Side
+##### Step 3: At Server Side
 Output:
 ====================Server Details====================
 Server Machine: 168.192.121.1
@@ -57,9 +57,9 @@ test.htm|128.226.180.163|46940|1
 
 Note: After the input is executed the file gets downloaded as client side.
 
-Step 4: Unknown resource is given as input at client side.
+##### Step 4: Unknown resource is given as input at client side.
 Input:
 wget http://168.192.121.1:8080/abc.txt
 
-Step 5:
+##### Step 5:
 Output: NO change as the file is not Found. Http 404 Not Found Error at client side.
