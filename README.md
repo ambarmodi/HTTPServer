@@ -1,7 +1,7 @@
 # HTTPServer
 Its a simple multi-threaded HTTP Server that only accepts HTTP GET requests and returns the desired content to the client.
 
-###Instructions to execute.
+### Instructions to execute.
 1. make 					(This will compile the program)
 2. java Server				(This will start the HTTP server)
 3. make clean 				(Optional : This will clean compiled .class files)
@@ -9,7 +9,7 @@ Its a simple multi-threaded HTTP Server that only accepts HTTP GET requests and 
 
 
 
-###Brief Description:
+### Brief Description:
 Server.Java 
 1. Server.java is the Server class(containing the main function) which creates the socket and listen on the port 8080.
 2. The server is responsible to accept the TCP request through socket and creates a new thread to process each Http Request.
@@ -23,7 +23,7 @@ HttpHandler.java
 4. HttpHandler also sends the resource name, client port number and client IP address to the Server.
 
 
-####Implementation Details:
+#### Implementation Details:
 1. It looks for a directory called www, located in the same parent directory as your HTTP server
 executable. The www directory should contain resources you want your HTTP server to serve. If this
 directory does not exist, the HTTP server outputs an error message and quit.
@@ -59,7 +59,7 @@ Note: After the input is executed the file gets downloaded as client side.
 
 Step 4: Unknown resource is given as input at client side.
 Input:
-wget http://remote06.cs.binghamton.edu:8080/abc.txt
+wget http://168.192.121.1:8080/abc.txt
 
 Step 5:
 Output: NO change as the file is not Found. Http 404 Not Found Error at client side.
