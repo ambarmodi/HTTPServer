@@ -27,7 +27,7 @@ Its a simple multi-threaded HTTP Server that only accepts HTTP GET requests and 
 1. It looks for a directory called www, located in the same parent directory as your HTTP server
 executable. The www directory should contain resources you want your HTTP server to serve. If this
 directory does not exist, the HTTP server outputs an error message and quit.
-2. The date and time the response is originated in the format defined by RFC 7231 Date/Time
+2. The date and time in the HTTP ResponseHeader is originated in the format defined by RFC 7231 Date/Time
 Formats 2.
 3. Upon successfully serving a request, your HTTP server must write to standard output (stdout) the following
 items:
