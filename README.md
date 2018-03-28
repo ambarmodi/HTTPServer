@@ -31,10 +31,10 @@ directory does not exist, the HTTP server outputs an error message and quit.
 Formats 2.
 3. Upon successfully serving a request, your HTTP server must write to standard output (stdout) the following
 items:
-  requested resource
-  client IP client’s IP address in dotted decimal representation
-  client port client’s port number
-  access times the number of times this resource has been requested since the start of the HTTP server
+  requested resource,
+  client IP (client’s IP address in dotted decimal representation),
+  client port (client’s port number),
+  access times (the number of times this resource has been requested since the start of the HTTP server)
 
 ### Sample Input/Output:
 ##### Step 1: Follow the instructions to execute to start the server.
